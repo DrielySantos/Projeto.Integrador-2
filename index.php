@@ -18,9 +18,9 @@ $page = array(
 
   if (!file_exists($page['php'])) :
     $page = array(
-        'php' => "pages/404/index.php",
-        'css' => "pages/404/index.css",
-        'js' => "pages/404/index.js",
+        'php' => "pages/error/index.php",
+        'css' => "pages/error/index.css",
+        'js' => "pages/error/index.js",
       );
     endif;
 
