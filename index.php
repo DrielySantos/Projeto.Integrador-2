@@ -111,6 +111,7 @@ $fsocial .= '
   ?>
   <title><?php echo $title ?></title>
 </head>
+
 <body>
   <a id="top"></a>
   <div id="wrap">
@@ -163,102 +164,104 @@ $fsocial .= '
         </a>
 
       <?php
-endif; // if(isset($user['uid'])):
-  ?>
 
-  <a href="/?menu" id="btnMenu" title="Abre/fecha menu">
-    <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
-  </a>
-</nav>
+      endif; // if(isset($user['uid'])):
 
-<div id="dropable">
-  <nav>
-    <?php if (isset($user['uid'])) : ?>
-      <a href="/?profile" title="Perfil de <?php echo $user['name'] ?>" class="profile">
-        <img src="<?php echo $user['photo'] ?>" alt="Perfil de <?php echo $user['name'] ?>">
-        <span>Perfil</span>
-      </a>
-    <?php else : ?>
-      <a href="/?login" title="Login de usuário">
-        <i class="fa-solid fa-right-to-bracket fa-fw"></i>
-        <span>Login</span>
-      </a>
-    <?php endif; ?>
-    <hr>
-    <a href="/?search" title="Procurar no site"><i class="fa-solid fa-magnifying-glass fa-fw"></i><span>Procurar</span></a>
-    <hr>
-    <a href="/?contacts" title="Faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>Contatos</span></a>
-    <a href="/?about" title="Sobre a gente..."><i class="fa-solid fa-circle-info fa-fw"></i><span>Sobre</span></a>
-    <a href="/?site" title="Sobre o site..."><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
-    <a href="/?team" title="Quem somos..."><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
-    <a href="/?policies" title="Políticas de Privacidade"><i class="fa-solid fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>
-  </nav>
-</div>
+      ?>
 
-<main id="content">
-  <?php
-  // Exibe o conteúdo dinâmico da página:
-  echo $page_content;
-  ?>
-</main>
-
-<footer>
-
-  <div id="fsup">
-    <a href="/" title="Página inicial">
-      <i class="fa-solid fa-house-chimney fa-fw"></i>
-    </a>
-    <div id="copy">&copy; 2022 <?php echo $c['sitename'] ?></div>
-    <a href="#top" title="Topo da página">
-      <i class="fa-solid fa-circle-up fa-fw"></i>
-    </a>
-  </div>
-
-  <div id="finf">
-    <?php
-    // Exibe a lista de redes sociais:
-    echo $fsocial;
-    ?>
-    <nav>
-      <h4>Acesso rápido:</h4>
-      <a href="/?contacts">
-        <i class="fa-solid fa-comments fa-fw"></i>
-        <span>Contatos</span>
-      </a>
-      <a href="/?about">
-        <i class="fa-solid fa-circle-info fa-fw"></i>
-        <span>Sobre</span>
-      </a>
-      <a href="/?policies">
-        <i class="fa-solid fa-user-lock fa-fw"></i>
-        <span>Sua privacidade</span>
+      <a href="/?menu" id="btnMenu" title="Abre/fecha menu">
+        <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
       </a>
     </nav>
-  </div>
-</footer>
-<span>&nbsp;</span>
 
-</div>
-
-<div id="acCookies">
-<div class="cookieBody">
-  <div class="cookieBox">
-    <div>
-      Usamos cookies para lhe fornecer uma experiência de navegação melhor e mais segura.
-      Não se preocupe, todos os seus dados pessoais estão protegidos.
+    <div id="dropable">
+      <nav>
+        <?php if (isset($user['uid'])) : ?>
+          <a href="/?profile" title="Perfil de <?php echo $user['name'] ?>" class="profile">
+            <img src="<?php echo $user['photo'] ?>" alt="Perfil de <?php echo $user['name'] ?>">
+            <span>Perfil</span>
+          </a>
+        <?php else : ?>
+          <a href="/?login" title="Login de usuário">
+            <i class="fa-solid fa-right-to-bracket fa-fw"></i>
+            <span>Login</span>
+          </a>
+        <?php endif; ?>
+        <hr>
+        <a href="/?search" title="Procurar no site"><i class="fa-solid fa-magnifying-glass fa-fw"></i><span>Procurar</span></a>
+        <hr>
+        <a href="/?contacts" title="Faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>Contatos</span></a>
+        <a href="/?about" title="Sobre a gente..."><i class="fa-solid fa-circle-info fa-fw"></i><span>Sobre</span></a>
+        <a href="/?site" title="Sobre o site..."><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
+        <a href="/?team" title="Quem somos..."><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
+        <a href="/?policies" title="Políticas de Privacidade"><i class="fa-solid fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>
+      </nav>
     </div>
-    <button id="accept">Entendi!</button>
+
+    <main id="content">
+      <?php
+      // Exibe o conteúdo dinâmico da página:
+      echo $page_content;
+      ?>
+    </main>
+
+    <footer>
+
+      <div id="fsup">
+        <a href="/" title="Página inicial">
+          <i class="fa-solid fa-house-chimney fa-fw"></i>
+        </a>
+        <div id="copy">&copy; 2022 <?php echo $c['sitename'] ?></div>
+        <a href="#top" title="Topo da página">
+          <i class="fa-solid fa-circle-up fa-fw"></i>
+        </a>
+      </div>
+
+      <div id="finf">
+        <?php
+        // Exibe a lista de redes sociais:
+        echo $fsocial;
+        ?>
+        <nav>
+          <h4>Acesso rápido:</h4>
+          <a href="/?contacts">
+            <i class="fa-solid fa-comments fa-fw"></i>
+            <span>Contatos</span>
+          </a>
+          <a href="/?about">
+            <i class="fa-solid fa-circle-info fa-fw"></i>
+            <span>Sobre</span>
+          </a>
+          <a href="/?policies">
+            <i class="fa-solid fa-user-lock fa-fw"></i>
+            <span>Sua privacidade</span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+    <span>&nbsp;</span>
+
   </div>
-</div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="/script.js"></script>
+  <div id="acCookies">
+    <div class="cookieBody">
+      <div class="cookieBox">
+        <div>
+          Usamos cookies para lhe fornecer uma experiência de navegação melhor e mais segura.
+          Não se preocupe, todos os seus dados pessoais estão protegidos.
+        </div>
+        <button id="accept">Entendi!</button>
+      </div>
+    </div>
+  </div>
 
-<?php
-// Carrega o javaScript da página solicitada:
-echo $page_js;
-?>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="/script.js"></script>
+  
+  <?php
+  // Carrega o javaScript da página solicitada:
+  echo $page_js;
+  ?>
 </body>
 
 </html>
