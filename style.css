@@ -1,5 +1,4 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
@@ -41,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
   min-width: 280px;
-  max-width: 1024px;
+  max-width: auto;
   margin: auto;
 }
 
@@ -52,9 +51,6 @@ body {
   align-items: center;
   justify-content: center;
   background-attachment: scroll;
-  /*background-color: rgb(122, 218, 33);*/
-  /*background-image: url("/img/bg03.jpg");*/
-  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -148,11 +144,6 @@ body {
   margin-right: auto;
 }
 
-/* Ícones do menu */
-/*#wrap>nav i {
-  font-size: 2rem;
-}*/
-
 /* Labels do menu */
 #wrap>nav span {
   display: block;
@@ -165,11 +156,6 @@ body {
   #wrap>nav a {
     flex-direction: row;
   }
-
-  /* Diminui tamanho dos ícones */
-  /*#wrap>nav i {
-    font-size: 1.2rem;
-  }*/
 
   /* Alinha labels com os ícones horizontalmente */
   #wrap>nav span {
@@ -246,7 +232,7 @@ body {
  **********/
 
 #wrap>footer {
-  background-color: rgba(199, 125, 55, 0.945);
+  background-color: rgba(204, 141, 83, 0.945);
   border-radius: 0.5rem;
   margin: 0.5rem;
   margin-top: 0;

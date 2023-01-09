@@ -43,7 +43,7 @@ if (isset($_POST['send'])) :
     // Gera uma mensagem de erro listando os erros obtidos:
     $form_error .= <<<HTML
 <div class="form-error">
-    <h3>Ooopa!</h3>
+    <h3>Deu ruim!</h3>
     <p>Ocorreram erros no preenchimento do formulário:</p>
     <ul>{$error}</ul>
     <p>Por favor, verifique o preenchimento e tente novamente...</p>
