@@ -165,7 +165,7 @@ $fsocial .= '
 
       <?php
 
-      endif; // if(isset($user['uid'])):
+      endif;
 
       ?>
 
